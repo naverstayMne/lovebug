@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>LoveBug - Dashboard</title>
+</head>
+
+<body class="inner-page dashboard">
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html"></a></div>
+      <div class="links loggedin"><!-- class "loggedin" hides links "login" and "register" and shows blocks with username, its drodown and lock -->
+        <div class="inlined username">
+          <a href="#" data-toggle="modal" data-target="#loginPopup">Login</a>
+          <span>Hello, Username</span>
+          <div class="dropdown">
+            <a href="profile.html">My pforile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+        <div class="inlined">
+          <a href="#" data-toggle="modal" data-target="#registerPopup">Register</a>
+          <a href="#" class="your-lock"><span class="notifications">1</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner img-wrap"><img src="images/banner04.jpg" class="abs-c img-cover" alt=""></section>
+
+  <section class="main">
+    <div class="container">
+
+      <div class="tabs">
+        <ul class="tabs__caption">
+          <li class="active">Locks that I’ve sent</li>
+          <li>Locks that I’ve received</li>
+        </ul>
+
+        <div class="tabs__content active">
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Caroline Mackintosh <span class="red">&amp;</span> Alex Kolodyazhni</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>23</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>Westminster Bridge</h5>
+                          <span class="grey">London, England</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md hidden" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response">
+                <h5>Response Message</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Danny Collins <span class="red">&amp;</span> Clara Ericson</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>11</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>Fehmarn Belt Bridge</h5>
+                          <span class="grey">Baltic Sea, Germany and Denmark</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md hidden" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response">
+                <h5>Response Message</h5>
+                <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Abby Barret <span class="red">&amp;</span> Aaron Taylor</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>7</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>The Kintai Bridge</h5>
+                          <span class="grey">Iwakuni, Japan</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Duis aute irure dolor in Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md hidden" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response">
+                <h5>Response Message</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__content">
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg-1" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg-1" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg-1)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm-1" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm-1)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Caroline Mackintosh <span class="red">&amp;</span> Alex Kolodyazhni</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>23</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>Westminster Bridge</h5>
+                          <span class="grey">London, England</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response hidden">
+                <h5>Response Message</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg-2" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg-2" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg-2)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm-2" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm-2)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Danny Collins <span class="red">&amp;</span> Clara Ericson</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>11</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>Fehmarn Belt Bridge</h5>
+                          <span class="grey">Baltic Sea, Germany and Denmark</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md hidden" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response">
+                <h5>Response Message</h5>
+                <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row lock-item">
+            <div class="col-xs-12 col-md-6">
+              <div class="couple">
+                <div class="photos left">
+                  <div class="photo-lg">
+                    <svg id="heart-mask-lg-3" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                      <defs>
+                        <pattern id="heart-lg-3" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-lg-3)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="photo-sm">
+                    <svg id="heart-mask-sm-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                      <defs>
+                        <pattern id="heart-sm-3" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                        </pattern>
+                      </defs>
+                      <g>
+                        <path fill="url(#heart-sm-3)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="couple-info">
+                  <div class="names"><h5>Abby Barret <span class="red">&amp;</span> Aaron Taylor</h5></div>
+                  <div class="table-block">
+                    <div class="table-row">
+                      <div class="table-col optimal-width text-center">
+                        <div class="date">
+                          <h5>7</h5>
+                          <span class="grey">Aug 2017</span>
+                        </div>
+                      </div>
+                      <div class="table-col">
+                        <div class="place">
+                          <h5>The Kintai Bridge</h5>
+                          <span class="grey">Iwakuni, Japan</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 message-block">
+              <h5>Message</h5>
+              <p>Duis aute irure dolor in Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <input type="submit" class="btn btn-md hidden" value="Response" data-toggle="modal" data-target="#response">
+              <div class="response">
+                <h5>Response Message</h5>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .tabs-->
+
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-ig.png" alt=""></a>
+      </div>
+      <div class="copy">&copy; 2017 LoveBug. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Modal Response -->
+  <div class="modal fade" id="response" tabindex="-1" role="dialog" aria-labelledby="responsePopup">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close abs-v" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="responsePopup">Response</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-row">
+                <textarea name="text" placeholder="Enter your message..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <input type="button" class="btn btn-md" data-dismiss="modal" aria-label="Close" value="Cancel">
+            <input type="submit" class="btn btn-md" value="Send">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/jquery-1.12.4.min.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

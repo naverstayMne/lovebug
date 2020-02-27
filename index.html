@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>LoveBug</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html"></a></div>
+      <div class="links"><!-- class "loggedin" hides links "login" and "register" and shows blocks with username, its drodown and lock -->
+        <div class="inlined username">
+          <a href="#" data-toggle="modal" data-target="#loginPopup">Login</a>
+          <span>Hello, Username</span>
+          <div class="dropdown">
+            <a href="profile.html">My pforile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+        <div class="inlined">
+          <a href="#" data-toggle="modal" data-target="#registerPopup">Register</a>
+          <a href="#" class="your-lock"><span class="notifications">1</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner video img-wrap">
+    <img src="images/bg-banner.jpg" alt="" class="abs-c img-cover">
+    <a id="bgndVideo" class="main-player" data-property="{videoURL:'https://youtu.be/3ctvBuDBwMU', containment:'.video', stopMovieOnBlur:false, showControls:false, autoPlay:true, mute:true, stopMovieOnClick:true, startAt:0, opacity:1}"></a>
+    <div class="container text-center">
+      <h2>Romeo and Juliette</h2>
+      <h3>with happy ending</h3>
+      <a href="steps.html" class="btn btn-lg">Lock your love</a>
+      <h1>How it works</h1>
+      <div class="row">
+        <div class="rule col-xs-3">
+          <div class="img-wrap">
+            <img class="abs-c img-contain" src="images/icon-bridge.png" alt="">
+          </div>
+          <span>Choose your favorite bridge</span>
+        </div>
+        <div class="rule col-xs-3">
+          <div class="img-wrap">
+            <img class="abs-c img-contain" src="images/icon-lock.png" alt="">
+          </div>
+          <span>Customize your lock</span>
+        </div>
+        <div class="rule col-xs-3">
+          <div class="img-wrap">
+            <img class="abs-c img-contain" src="images/icon-letter.png" alt="">
+          </div>
+          <span>Write the love letter</span>
+        </div>
+        <div class="rule col-xs-3">
+          <div class="img-wrap">
+            <img class="abs-c img-contain" src="images/icon-hearts.png" alt="">
+          </div>
+          <span>Send it to your loved one</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h1>Popular locations</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="img-wrap bridge-block popular">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">254</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="capture">
+              <h4>Tower Bridge</h4>
+              <small>London, England</small>
+            </div>
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-lg">Lock your love</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="img-wrap bridge-block popular">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">15k</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="capture">
+              <h4>Tower Bridge</h4>
+              <small>London, England</small>
+            </div>
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-lg">Lock your love</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section locations">
+    <div class="container text-center">
+      <h1>More locations</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock inactive"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock inactive"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 location">
+          <div class="img-wrap bridge-block more">
+            <span class="favorite"></span>
+            <span class="lock"><span class="number abs-h">48</span></span>
+            <img class="abs-c img-cover" src="images/image01.jpg" alt="">
+            <div class="overlay">
+              <a href="#" class="abs-c btn btn-sm">Lock your love</a>
+            </div>
+          </div>
+          <h5>Sydney Harbour Bridge</h5>
+          <span class="grey">Sydney, Australia</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <button class="btn btn-md btn-more">View more...</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section info">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h1>Latest couples</h1>
+          <div class="couple">
+            <div class="photos left">
+              <div class="photo-lg">
+                <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                  <defs>
+                    <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="photo-sm">
+                <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                  <defs>
+                    <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="couple-info">
+              <div class="names">Caroline Mackintosh <span class="red">&amp;</span> Alex Kolodyazhni</div>
+              <div class="table-block">
+                <div class="table-row">
+                  <div class="table-col optimal-width text-center">
+                    <div class="date">
+                      <h5>23</h5>
+                      <span class="grey">Aug 2017</span>
+                    </div>
+                  </div>
+                  <div class="table-col">
+                    <div class="place">
+                      <h5>Westminster Bridge</h5>
+                      <span class="grey">London, England</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couple">
+            <div class="photos left">
+              <div class="photo-lg">
+                <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                  <defs>
+                    <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="photo-sm">
+                <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                  <defs>
+                    <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="couple-info">
+              <div class="names">Caroline Mackintosh <span class="red">&amp;</span> Alex Kolodyazhni</div>
+              <div class="table-block">
+                <div class="table-row">
+                  <div class="table-col optimal-width text-center">
+                    <div class="date">
+                      <h5>23</h5>
+                      <span class="grey">Aug 2017</span>
+                    </div>
+                  </div>
+                  <div class="table-col">
+                    <div class="place">
+                      <h5>Westminster Bridge</h5>
+                      <span class="grey">London, England</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="couple">
+            <div class="photos left">
+              <div class="photo-lg">
+                <svg id="heart-mask-lg" class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="96" viewBox="-3 -3 111 96">
+                  <defs>
+                    <pattern id="heart-lg" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image02.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-lg)" stroke="#89000e" stroke-width="5" d="M97.424,7.772C86.843-2.905,69.338-1.239,58.757,9.438l-6.19,6.228l-6.265-6.302c-5.29-5.339-11.895-8.979-18.833-8.979S13.592,2.358,8.302,7.697c-10.581,10.678-9.568,26.946,1,37.632l41.846,42.997c0.927,0.937,2.438,0.945,3.375,0.018c0.007-0.006,0.013-0.012,0.019-0.018C68.836,73.9,82.795,59.125,97.09,44.7C107.671,34.022,108.004,18.449,97.424,7.772z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="photo-sm">
+                <svg id="heart-mask-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="86" viewBox="-2 -2 93 86">
+                  <defs>
+                    <pattern id="heart-sm" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                      <image height="1" width="1" preserveAspectRatio="xMidYMid slice" xlink:href="images/image03.jpg" />
+                    </pattern>
+                  </defs>
+                  <g>
+                    <path fill="url(#heart-sm)" stroke="#d50016" stroke-width="5" stroke-opacity="1" d="M85.344,23.686c-6.367-11.146-21.033-13.942-32.121-7.473l-6.482,3.769l-3.775-6.583C39.781,7.824,35.141,3.112,29.418,1.579C23.695,0.045,17.387,0.69,11.843,3.925C0.755,10.395-2.052,24.642,4.304,35.793l24.767,43.714c0.558,0.978,1.802,1.318,2.78,0.761c0.006-0.004,0.013-0.007,0.019-0.011c14.981-8.74,29.963-17.494,44.944-26.234C87.902,47.553,91.713,34.832,85.344,23.686z"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="couple-info">
+              <div class="names">Caroline Mackintosh <span class="red">&amp;</span> Alex Kolodyazhni</div>
+              <div class="table-block">
+                <div class="table-row">
+                  <div class="table-col optimal-width text-center">
+                    <div class="date">
+                      <h5>23</h5>
+                      <span class="grey">Aug 2017</span>
+                    </div>
+                  </div>
+                  <div class="table-col">
+                    <div class="place">
+                      <h5>Westminster Bridge</h5>
+                      <span class="grey">London, England</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h1>About</h1>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-ig.png" alt=""></a>
+      </div>
+      <div class="copy">&copy; 2017 LoveBug. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-labelledby="loginPopup">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close abs-v" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="loginPopup">Please Login</h4>
+        </div>
+        <div class="modal-body text-center">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-row">
+                <input type="email" placeholder="Your e-mail">
+              </div>
+              <div class="form-row">
+                <input type="password" placeholder="Password">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" class="btn btn-md" value="Login">
+          </div>
+          <div class="radio">
+            <input id="remember" name="remember" type="checkbox">
+            <label for="remember">Remember me</label> 
+          </div>
+          <small>Or login with your social account</small>
+          <div class="socials">
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb-b.png" alt=""></a>
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw-b.png" alt=""></a>
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp-b.png" alt=""></a>   
+          </div>
+          <small>Don’t have an account?
+            <a href="#" data-toggle="modal" data-target="#registerPopup">Register Now</a><br>
+            <a href="#">Forgot password?</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Register -->
+  <div class="modal fade" id="registerPopup" tabindex="-1" role="dialog" aria-labelledby="registerPopup">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close abs-v" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="registerPopup">Register</h4>
+        </div>
+        <div class="modal-body text-center">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-row">
+                <input type="text" placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-row">
+                <input type="text" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-row">
+                <input type="text" placeholder="Phone">
+              </div>
+              <div class="form-row">
+                <input type="email" placeholder="Your e-mail">
+              </div>
+              <div class="form-row">
+                <input type="password" placeholder="Password">
+              </div>
+              <div class="form-row">
+                <input type="password" placeholder="Confirm Password">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" class="btn btn-md" value="Register">
+          </div>
+          <div class="radio">
+            <input id="agree" name="agree" type="checkbox" checked>
+            <label for="agree">I agree to the <a class="red" href="#"  data-toggle="modal" data-target="#termsPopup">Terms Of Use</a></label> 
+          </div>
+          <small>or register with your social account</small>
+          <div class="socials">
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb-b.png" alt=""></a>
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw-b.png" alt=""></a>
+            <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp-b.png" alt=""></a>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Terms Of Use -->
+  <div class="modal fade" id="termsPopup" tabindex="-1" role="dialog" aria-labelledby="termsPopup">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close abs-v" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="termsPopup">Terms and Conditions</h4>
+        </div>
+        <div class="modal-body">
+          <div id="custom-scroll" class="custom-scroll">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </div>
+          <div class="row text-center">
+            <button type="button" class="btn btn-md " data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="scripts/jquery-1.12.4.min.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

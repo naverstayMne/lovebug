@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>LoveBug - My profile</title>
+</head>
+
+<body class="inner-page profile">
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html"></a></div>
+      <div class="links loggedin"><!-- class "loggedin" hides links "login" and "register" and shows blocks with username, its drodown and lock -->
+        <div class="inlined username">
+          <a href="#" data-toggle="modal" data-target="#loginPopup">Login</a>
+          <span>Hello, Username</span>
+          <div class="dropdown">
+            <a href="profile.html">My pforile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+        <div class="inlined">
+          <a href="#" data-toggle="modal" data-target="#registerPopup">Register</a>
+          <a href="#" class="your-lock"><span class="notifications">1</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner img-wrap"><img src="images/banner04.jpg" class="abs-c img-cover" alt=""></section>
+
+  <section class="main">
+    <div class="container">
+      <h1 class="text-center">My Profile</h1>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-3 col-md-6">
+          <div class="form">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="form-row">
+                  <input type="text" class="text-center" placeholder="First Name" value="Danny">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="form-row">
+                  <input type="text" class="text-center" placeholder="Last Name" value="Moore">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-row">
+                  <input type="email" class="text-center" placeholder="Your e-mail"  value="danny.moore@mail.com">
+                </div>
+                <div class="form-row">
+                  <input type="text" class="text-center" placeholder="Phone" value="+4 324 456 5484">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="form-row">
+                  <p>I'm a</p>
+                  <div class="radio">
+                    <input id="gender-f" name="gender" type="radio">
+                    <label for="gender-f">Female</label>
+                  </div>
+                  <div class="radio">
+                    <input id="gender-m" name="gender" type="radio">
+                    <label for="gender-m">Male</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="form-row">
+                  <p>Date of birth</p>
+                  <input class="datepicker" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <input type="button" class="btn btn-md" value="Save"><br>
+              <input type="button" class="btn btn-md" value="Change password">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-ig.png" alt=""></a>
+      </div>
+      <div class="copy">&copy; 2017 LoveBug. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="scripts/jquery-1.12.4.min.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

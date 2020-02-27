@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>LoveBug</title>
+</head>
+
+<body>
+  <div class="wrapper steps">
+
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html"></a></div>
+      <div class="links loggedin"><!-- class "loggedin" hides links "login" and "register" and shows blocks with username, its drodown and lock -->
+        <div class="inlined username">
+          <a href="#" data-toggle="modal" data-target="#loginPopup">Login</a>
+          <span>Hello, Username</span>
+          <div class="dropdown">
+            <a href="profile.html">My pforile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+        <div class="inlined">
+          <a href="#" data-toggle="modal" data-target="#registerPopup">Register</a>
+          <a href="#" class="your-lock"><span class="notifications">1</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container text-center">
+    <div id="step-1">
+      <div class="step-header">
+        <div class="step-number inlined active">1</div>
+        <span class="step-title inlined">Choose a lock</span>
+        <div class="step-number inlined">2</div>
+        <div class="step-number inlined">3</div>
+        <div class="step-number inlined">4</div>
+        <div class="step-number inlined">5</div>
+      </div>
+      <div class="step-body">
+        <div class="row">
+          <div class="col-sm-4 br-d">
+            <h3>Default locks</h3>
+            <div id="carousel-default-locks" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-01.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Regular lock</div>
+                </div>
+                <div class="item">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-02.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Regular lock 2</div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-default-locks" role="button" data-slide="prev"></a>
+              <a class="right carousel-control" href="#carousel-default-locks" role="button" data-slide="next"></a>
+            </div>
+            <div class="radio">
+              <input id="defaultlock" name="lockplan" type="radio" checked>
+              <label for="defaultlock"><span class="red">Free</span></label> 
+            </div>
+          </div>
+          <div class="col-sm-4 br-d">
+            <h3>Lover's locks</h3>
+            <div id="carousel-lovers-locks" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-05.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Pink lock</div>
+                </div>
+                <div class="item">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-04.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Not Pink lock</div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-lovers-locks" role="button" data-slide="prev"></a>
+              <a class="right carousel-control" href="#carousel-lovers-locks" role="button" data-slide="next"></a>
+            </div>
+            <div class="radio">
+              <input id="loverslock" name="lockplan" type="radio">
+              <label for="loverslock">price <span class="red">$1</span></label> 
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3>Love bug's locks</h3>
+            <div id="carousel-lovebugs-locks" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-06.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Gold lock</div>
+                </div>
+                <div class="item">
+                  <div class="img-wrap">
+                    <img src="images/img-lock-06.png" alt="" class="abs-c img-contain">
+                  </div>
+                  <div class="img-caption">Gold lock 2</div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-lovebugs-locks" role="button" data-slide="prev"></a>
+              <a class="right carousel-control" href="#carousel-lovebugs-locks" role="button" data-slide="next"></a>
+            </div>
+            <div class="radio">
+              <input id="lovebugslock" name="lockplan" type="radio">
+              <label for="lovebugslock">price <span class="red">$5</span></label> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-footer text-center">
+        <button class="btn btn-md">Next</button>
+      </div>
+    </div>
+
+    <div id="step-2">
+      <div class="step-header">
+        <div class="step-number inlined">1</div>
+        <div class="step-number inlined active">2</div>
+        <span class="step-title inlined">This is my details</span>
+        <div class="step-number inlined">3</div>
+        <div class="step-number inlined">4</div>
+        <div class="step-number inlined">5</div>
+      </div>
+      <div class="step-body">
+        <div class="row">
+          <div class="col-sm-6 br-d equal-h">
+            <h3>This is my details</h3>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-row">
+                  <input type="text" placeholder="First Name" value="Danny">
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-row">
+                  <input type="text" placeholder="Last Name" value="Moore">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-row">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Mobile phone">
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <strong class="inlined">I'm a</strong>
+              <div class="radio inlined">
+                <input id="female" name="mygender" type="radio">
+                <label for="female"><span class="red">Female</span></label> 
+              </div>
+              <div class="radio inlined">
+                <input id="male" name="mygender" type="radio">
+                <label for="male"><span class="red">Male</span></label> 
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 equal-h">
+            <h3>Photo</h3>
+            <div class="img-wrap uploaded">
+              <span class="btn-remove">remove</span>
+              <img src="images/image04.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-footer text-center">
+        <button class="btn btn-md">Back</button>
+        <button class="btn btn-md">Next</button>
+      </div>
+    </div>
+
+    <div id="step-3">
+      <div class="step-header">
+        <div class="step-number inlined">1</div>
+        <div class="step-number inlined">2</div>        
+        <div class="step-number inlined active">3</div>
+        <span class="step-title inlined">My partner details</span>
+        <div class="step-number inlined">4</div>
+        <div class="step-number inlined">5</div>
+      </div>
+      <div class="step-body">
+        <div class="row">
+          <div class="col-sm-6 br-d equal-h">
+            <h3>My partner details</h3>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-row">
+                  <input type="text" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-row">
+                  <input type="text" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">                
+                <div class="form-row">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Mobile phone">
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <strong class="inlined">My partner is a </strong>
+              <div class="radio inlined">
+                <input id="pfemale" name="partnergender" type="radio" checked>
+                <label for="pfemale"><span class="red">Female</span></label> 
+              </div>
+              <div class="radio inlined">
+                <input id="pmale" name="partnergender" type="radio">
+                <label for="pmale"><span class="red">Male</span></label> 
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 equal-h">
+            <h3>Photo</h3>
+            <div class="img-wrap uploaded">
+              <span class="btn-remove hidden">remove</span>
+              <img id="blah" class="abs-c img-cover" src="" alt="">
+              <label class="btn-upload">
+                <div class="abs-c">
+                  <i class="icon-upload"></i>
+                  <span>Upload photo</span>
+                </div>                
+                <input type="file" onchange="readURL(this);" >
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-footer text-center">
+        <button class="btn btn-md">Back</button>
+        <button class="btn btn-md">Next</button>
+      </div>
+    </div>
+
+    <div id="step-4">
+      <div class="step-header">
+        <div class="step-number inlined">1</div>
+        <div class="step-number inlined">2</div>        
+        <div class="step-number inlined">3</div>
+        <div class="step-number inlined active">4</div>
+        <span class="step-title inlined">Message</span>
+        <div class="step-number inlined">5</div>
+      </div>
+      <div class="step-body">
+        <div class="row">
+          <div class="col-sm-4 br-d text-left">
+            <div class="radio-tab">
+              <div class="radio">
+                <input id="notify" name="messagetype" checked type="radio" data-target="#notifyTab" >
+                <label for="notify">Notify by email</label>
+              </div>
+              <div class="radio-add">
+                <span class="red d-block">Free</span> 
+              </div>                           
+            </div>
+            <div class="radio-tab">
+              <div class="radio">
+                <input id="formatted" name="messagetype" type="radio" data-target="#formattedTab" >
+                <label for="formatted">Formatted email</label>
+              </div>
+              <div class="radio-add">
+                <small class="">price <span class="red">$15</span></small>
+              </div> 
+            </div>
+            <div class="radio-tab">
+              <div class="radio">
+                <input id="regularCard" name="messagetype" type="radio" data-target="#regularCardTab" >
+                <label for="regularCard">Add Greeting Card</label>
+              </div>
+              <div class="radio-add">
+                <span class="xs d-block">regular delivery</span>
+                <small class="">price <span class="red">$20</span></small>
+              </div> 
+            </div>
+            <div class="radio-tab">
+              <div class="radio">
+                <input id="expressCard" name="messagetype" type="radio" data-target="#expressCardTab" >
+                <label for="expressCard">Add Greeting Card</label>
+              </div>
+              <div class="radio-add">
+                <span class="xs d-block">express delivery</span>
+                <small class="">price <span class="red">$25</span></small>
+              </div> 
+            </div>
+          </div>
+
+          <div class="tab-content col-sm-8">
+            <div id="notifyTab" class="tab-pane row active">
+              <div class="col-xs-12 text-left">
+                <h5>Your message</h5>
+                <div class="form-row">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+              </div>              
+            </div>
+
+            <div id="formattedTab" class="tab-pane row">
+              <div class="col-sm-6 text-center br-d equal-th">
+                <h3>Mail template</h3>
+                <div id="carousel-email-template" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="img-wrap">
+                        <img src="images/template01.jpg" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template one</div>
+                    </div>
+                    <div class="item">
+                      <div class="img-wrap">
+                        <img src="images/template01.jpg" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template two</div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-email-template" role="button" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#carousel-email-template" role="button" data-slide="next"></a>
+                </div>
+              </div>
+              <div class="col-sm-6 text-left equal-th">
+                <h5>Your message</h5>
+                <div class="form-row">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div id="regularCardTab" class="tab-pane row">
+              <div class="col-sm-6 text-center br-d equal-th">
+                <h3>Greeting card</h3>
+                <div id="carousel-regular-card" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="img-wrap">
+                        <img src="images/template02.png" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template one</div>
+                    </div>
+                    <div class="item">
+                      <div class="img-wrap">
+                        <img src="images/template02.png" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template two</div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-regular-card" role="button" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#carousel-regular-card" role="button" data-slide="next"></a>
+                </div>
+              </div>
+              <div class="col-sm-6 text-left equal-th">
+                <div class="form-row">
+                  <input type="text" placeholder="Address">
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="form-row">
+                      <input type="text" placeholder="Zip">
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="form-row">
+                      <input type="text" placeholder="City">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Country">
+                </div>
+                <div class="form-row sm">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+              </div>
+            </div>
+            <div id="expressCardTab" class="tab-pane row">
+              <div class="col-sm-6 text-center br-d equal-th">
+                <h3>Greeting card</h3>
+                <div id="carousel-express-card" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="img-wrap">
+                        <img src="images/template02.png" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template one</div>
+                    </div>
+                    <div class="item">
+                      <div class="img-wrap">
+                        <img src="images/template02.png" alt="" class="abs-c img-contain">
+                      </div>
+                      <div class="img-caption">Template two</div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-express-card" role="button" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#carousel-express-card" role="button" data-slide="next"></a>
+                </div>
+              </div>
+              <div class="col-sm-6 text-left equal-th">
+                <div class="form-row">
+                  <input type="text" placeholder="Address">
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="form-row">
+                      <input type="text" placeholder="Zip">
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="form-row">
+                      <input type="text" placeholder="City">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Country">
+                </div>
+                <div class="form-row sm">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-footer text-center">
+        <button class="btn btn-md">Back</button>
+        <button class="btn btn-md">Next</button>
+      </div>
+    </div>
+
+    <div id="step-5">
+      <div class="step-header">
+        <div class="step-number inlined">1</div>
+        <div class="step-number inlined">2</div>        
+        <div class="step-number inlined">3</div>
+        <div class="step-number inlined">4</div>        
+        <div class="step-number inlined active">5</div>
+        <span class="step-title inlined">Payment</span>
+      </div>
+      <div class="step-body">
+        <div class="row">
+          <div class="col-sm-6 br-d">
+            <h3>Summary</h3>
+            <div class="text-left summary-box">
+              <span class="xs d-block">Lock</span>
+              <small>Gold Lock <span class="red">$10</span></small>
+            </div>
+            <div class="text-left summary-box">
+              <span class="xs d-block">Greeting Card</span>
+              <small>Regular delivery. Template one <span class="red">$20</span></small>
+              <div class="d-block">Schulstrasse 4, 32547 Bad O</div>
+            </div>
+            <div class="text-left summary-box">
+              <span class="xs d-block">Send by (buyer)</span>
+              <small>Danny Moore</small>
+              <div class="d-block">danny.moore@mail.com</div>
+            </div>
+            <div class="text-left summary-box">
+              <span class="xs d-block">Send to (partner)</span>
+              <small>Clara Ericson</small>
+              <div class="d-block">clara.ericson@mail.com</div>
+            </div>
+          </div>
+          <div class="col-sm-6 card">
+            <h3>Payment</h3>
+            <div class="card-block">
+              <div class="form-row">
+                <input type="text" placeholder="Card number">
+              </div>
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="form-row">
+                    <input type="text" placeholder="Month">
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="form-row">
+                    <input type="text" placeholder="Year">
+                  </div>
+                </div>
+                <div class="col-xs-3 col-xs-offset-3">
+                  <div class="form-row">
+                    <input type="text" placeholder="CV code">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-row">
+                    <input type="text" placeholder="Coupon code">
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <input type="submit" class="btn btn-md" value="Pay $30">
+          </div>
+        </div>
+      </div>
+      <div class="step-footer text-center">
+        <button class="btn btn-md">Back</button>
+      </div>
+    </div>
+
+    <div id="thankyou" class="thank-block text-center">
+      <h2>Thank you</h2>
+      <h4>for your order</h4>
+      <h5>We'll email you an order confirmation with details of your orde</h5>
+      <button class="btn btn-md">Ok</button>
+    </div>
+  </div>
+  
+  <footer class="footer text-center">
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-fb.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-gp.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-tw.png" alt=""></a>
+        <a class="img-wrap" href="#"><img class="abs-c img-contain" src="images/icon-ig.png" alt=""></a>
+      </div>
+      <div class="copy">&copy; 2017 LoveBug. All rights reserved.</div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="scripts/jquery-1.12.4.min.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="scripts/jquery.mb.YTPlayer.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
